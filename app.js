@@ -2,11 +2,9 @@
 
 var greet = require("./lib/greet.js");
 
-console.log(process.argv);
+var arg2 = process.argv.slice(process.argv.indexOf('Henry'));
 
-var arg2 = process.argv.slice(2);
-
-if (args) {
+if (arg2) {
 	console.log(greet(arg2.toString()));
 }
 //the command line command i used for this was first chmod +x app.js
